@@ -1,0 +1,25 @@
+\documentclass[12pt]{report}
+\begin{document} % opening statement - body
+Were the differences in time more drastic than expected? 
+\newline
+\newline
+I definitely noticed that the more number of elements that the algorithms had to sort, the more drastic the difference in the times. Initially, the differences were not incredibly noticeable. But, the more and more that the algorithm had to sort, the more noticeable the differences in their time. This is expected as their time complexities are lines (except for merge sort and quick sort which are nlogn). 
+\newline
+\newline
+What tradeoffs are involved in one algorithm over another? 
+\newline
+\newline
+Bubble Sort and Cocktail Sort are both far more costly in terms of run time, however, they are also incredibly easier to implement. While Quick and Merge Sort are comparable in their runtime, Quick Sort is more effective in situations in which we do not care about space complexity. This is because it sorts in place whereas Merge sort creates several subarrays. Merge sort is better in situations in which we do not necessarily care about computing power. Quick Sort’s constant swaps in place can be very costly on the CPU.
+\newline
+\newline
+How did your choice of programming language affect the results? 
+\newline
+\newline
+While this is pretty obvious, it is important to note that these algorithms run slightly faster in C++ as opposed to Java based purely on the fact that C++ is a compiled as opposed to interpreted language. Beyond this, dynamically allocated arrays are used to store the data that needs to be sorted. Different languages may have had different implementations of their array and thusly may have seen different sorting times.
+\newline
+\newline
+What are some shortcomings of this empirical analysis?
+\newline
+\newline
+There are a lot of confounding variables that may have existed within the analysis. For instance, while I did my best to make sure that there were not programs running in the background, there is no guarantee that there were lags at some moments but not others. 
+\end{document} % closing statement - body
